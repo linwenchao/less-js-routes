@@ -1,4 +1,3 @@
-
 require 'less-js-routes/config'
 
 
@@ -42,7 +41,7 @@ class << self
       s += build_funciton_call route, 'ajax'
       s += "\n"
     end
-    File.open("#{Rails.public_path}/javascripts/less_routes.js", 'w') do |f|
+    File.open("#{Rails.root}/app/assets/javascripts/less_routes.js", 'w') do |f|
       f.write s
     end
 
